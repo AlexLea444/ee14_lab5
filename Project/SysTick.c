@@ -8,7 +8,7 @@ volatile uint32_t MillisecondsElapsed = 0;
 volatile uint32_t SecondsElapsed = 0;
 volatile uint32_t MinutesElapsed = 0;
 volatile uint32_t PreviousInput;
-bool		 pause = false;
+bool			  pause = false;
 
 // ticks: number of ticks between two interrupts
 void SysTick_Init(uint32_t ticks) {

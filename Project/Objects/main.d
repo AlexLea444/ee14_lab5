@@ -11,3 +11,9 @@
 .\objects\main.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: LED.h
 .\objects\main.o: LCD.h
+.\objects\main.o: UART.h
+.\objects\main.o: SysClock.h
+.\objects\main.o: SPI.h
+.\objects\main.o: Gyro.h
+.\objects\main.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
