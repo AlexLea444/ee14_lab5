@@ -1,0 +1,29 @@
+32-bits for MODER: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX
+		   30 28 26 24 22 20 18 16 14 12 10  8  6  4  2  0
+
+/*	================================================
+ *	PD.1 = SPI2_SCK = Gyro MEMS_SCK		// Clock
+ *	PB.8 = GYRO_INT2 // wtf does this do
+ *	PD.2 = GYRO_INT1 // ???
+ *	PD.3 = SPI2_MISO = Gyro MEMS_MISO = SDI // Data In
+ *	PD.4 = SPI2_MOSI = Gyro MEMS_MOSI = SDO // Data Out
+ * 	PD.7 = GYRO_CS				// Chip Select
+ */
+// GPIO Mode: Input(00), Output(01), AlterFunc(10), Analog(11, reset)
+// So for GPIOD->MODER, set pins 3, 4, and 7 to alternate function (10)
+// Based on tmdarwen's example?
+
+32-bits for MODER: XX XX XX XX XX XX XX XX 10 XX XX 10 10 XX XX XX
+		   30 28 26 24 22 20 18 16 14 12 10  8  6  4  2  0
+		  ================================================
+	     Pins: 15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0
+
+// First clear, then set the left bit?
+
+// AFRL [ E X A M P L E ]
+// See pg 149 of ST RM0383 document.  SPI1 is AF5.  And pg 160 of the same document shows
+// alternate function for pin 5 = bits 20-23, pin 6 = bits 24-27, pin 7 = bits 28-31.
+// We set these to 5.
+
+// AFRL Attempt:
+// pin 0 = 0=3, pin 1 = 4-7, pin 2 = 8-11, pin 3 = 12-15, pin 4 = 16-19
