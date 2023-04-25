@@ -1,2 +1,12 @@
 EE14 Lab 5
 by Remy Ren, Siyar Kilic, and Alexander Lea
+
+To flash, the host computer requires Keil uVision.
+
+To compile the project, you need ARM compiler 5, such as version 5.06 (requires account creation):
+  - https://developer.arm.com/documentation/ka005198/latest
+  - https://developer.arm.com/documentation/101407/0538/Creating-Applications/Tips-and-Tricks/Manage-Arm-Compiler-Versions
+  
+If the host PC cannot connect to the ST-Link follow the instructions here (only needs name and email):
+  - https://os.mbed.com/teams/ST/wiki/ST-Link-Driver
+  - https://developer.arm.com/documentation/ka005381/1-0?lang=en&rev= (if uVision crashes on flashing)
