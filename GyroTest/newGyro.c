@@ -22,6 +22,7 @@
  *	L3GD20 Datasheet (pg.25 for SPI Read/Writes): https://www.st.com/en/mems-and-sensors/l3gd20.html#documentation
  *  Bless Your Soul: https://www.tmdarwen.com/latest/stm32-gyroscope-accelerometer-demo
  *	==== Additional Resources ====
+ *	Official Drivers: https://github.com/STMicroelectronics/stm32-l3gd20
  *  https://web.eece.maine.edu/~zhu/book/STM32L4/Discovery%20kit%20with%20STM32L476VG%20MCU.pdf (page 33)
  *	https://web.eece.maine.edu/~vweaver/classes/ece271_2022s/ece271_lab1.pdf
  *	Contains Schematic: https://www.st.com/resource/en/user_manual/um1879-discovery-kit-with-stm32l476vg-mcu-stmicroelectronics.pdf (CRITICAL: User manual SPECIFIC to our board)

@@ -26,29 +26,45 @@ Project File Date:  04/23/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'c:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'Target 1'
+Rebuild target 'Target 1'
+assembling startup_stm32l476xx.s...
+compiling LED.c...
+compiling main.c...
+newGyro.h(6): warning:  #1295-D: Deprecated declaration NewGyroInit - give arg types
+  void NewGyroInit();
+newGyro.h(7): warning:  #1295-D: Deprecated declaration displayXYZ - give arg types
+  void displayXYZ();
+main.c(26): warning:  #177-D: variable "n"  was declared but never referenced
+  	int n;
+main.c: 3 warnings, 0 errors
+compiling SysTick.c...
+compiling LCD.c...
+compiling UART.c...
+compiling SysClock.c...
+compiling Gyro.c...
+compiling SPI.c...
 compiling newGyro.c...
 newGyro.h(6): warning:  #1295-D: Deprecated declaration NewGyroInit - give arg types
   void NewGyroInit();
 newGyro.h(7): warning:  #1295-D: Deprecated declaration displayXYZ - give arg types
   void displayXYZ();
-newGyro.c(192): warning:  #177-D: variable "n"  was declared but never referenced
+newGyro.c(193): warning:  #177-D: variable "n"  was declared but never referenced
   	int n; // delete for testing
-newGyro.c(193): warning:  #177-D: variable "buffer"  was declared but never referenced
+newGyro.c(194): warning:  #177-D: variable "buffer"  was declared but never referenced
   	uint8_t buffer[BufferSize]; // delete for testing
-newGyro.c(255): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+newGyro.c(256): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   	float scaler = high * 0.001;
-newGyro.c(252): warning:  #177-D: variable "low"  was declared but never referenced
+newGyro.c(253): warning:  #177-D: variable "low"  was declared but never referenced
   	float low		= 8.75;
-newGyro.c(253): warning:  #177-D: variable "mid"  was declared but never referenced
+newGyro.c(254): warning:  #177-D: variable "mid"  was declared but never referenced
   	float mid		= 17.50;
-newGyro.c(255): warning:  #177-D: variable "scaler"  was declared but never referenced
+newGyro.c(256): warning:  #177-D: variable "scaler"  was declared but never referenced
   	float scaler = high * 0.001;
 newGyro.c: 8 warnings, 0 errors
 linking...
 Program Size: Code=8652 RO-data=600 RW-data=24 ZI-data=5472  
 FromELF: creating hex file...
-".\Objects\project.axf" - 0 Error(s), 8 Warning(s).
+".\Objects\project.axf" - 0 Error(s), 11 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -71,7 +87,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.6.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>
