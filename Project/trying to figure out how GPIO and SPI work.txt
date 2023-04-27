@@ -10,10 +10,10 @@
  * 	PD.7 = GYRO_CS				// Chip Select
  */
 // GPIO Mode: Input(00), Output(01), AlterFunc(10), Analog(11, reset)
-// So for GPIOD->MODER, set pins 1, 3, and 4 to alternate function (10)
+// So for GPIOD->MODER, set pins 3, 4, and 7 to alternate function (10)
 // Based on tmdarwen's example?
 
-32-bits for MODER: XX XX XX XX XX XX XX XX XX XX XX 10 10 XX 10 XX
+32-bits for MODER: XX XX XX XX XX XX XX XX 10 XX XX 10 10 XX XX XX
 		   30 28 26 24 22 20 18 16 14 12 10  8  6  4  2  0
 		  ================================================
 	     Pins: 15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0

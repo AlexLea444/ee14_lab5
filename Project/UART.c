@@ -70,7 +70,7 @@ void USART_Init (USART_TypeDef * USARTx) {
 	// If oversampling by 8,  Tx/Rx baud = 2*f_CK / USARTDIV
   // When OVER8 = 0, BRR = USARTDIV
 	// USARTDIV = 80MHz/9600 = 8333 = 0x208D
-	USARTx->BRR  = 0x208D; // Limited to 16 bits
+	USARTx->BRR  = 0x0138; // Limited to 16 bits
 
 	USARTx->CR1  |= (USART_CR1_RE | USART_CR1_TE);  	// Transmitter and Receiver enable
 	

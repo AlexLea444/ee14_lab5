@@ -8,5 +8,7 @@
 .\objects\systick.o: c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\systick.o: c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h
 .\objects\systick.o: LED.h
+.\objects\systick.o: UART.h
+.\objects\systick.o: LCD.h
 .\objects\systick.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\systick.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

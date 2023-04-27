@@ -1,5 +1,7 @@
 #include "stm32l476xx.h"
 #include "LED.h"
+#include "UART.h"
+#include "LCD.h"
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -7,8 +9,13 @@ volatile uint32_t TimeDelay;
 volatile uint32_t MillisecondsElapsed = 0;
 volatile uint32_t SecondsElapsed = 0;
 volatile uint32_t MinutesElapsed = 0;
-volatile uint32_t PreviousInput;
-bool			  pause = false;
+volatile uint32_t Input;
+bool			  	 pause = false;
+bool					paused = false;
+bool				delaying = false;
+bool	 still_pressed = false;
+volatile int32_t XCounter = 0;
+volatile int32_t YCounter = 0;
 
 // ticks: number of ticks between two interrupts
 void SysTick_Init(uint32_t ticks) {
@@ -44,14 +51,6 @@ void SysTick_Init(uint32_t ticks) {
 	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
 }
 
-// SysTick interrupt service routine
-void SysTick_Handler(void) {
-	TimeDelay--;
-	if (pause) {
-		MillisecondsElapsed++;
-	}
-}
-
 void Joy_Init(void) {
 	/* Enable GPIOs clock for Port A */
 	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;
@@ -60,16 +59,65 @@ void Joy_Init(void) {
 	// Joystick Button = PA0
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// GPIO Mode: Input(00), Output(01), AlterFunc(10), Analog(11, reset)
-	GPIOA->MODER &= ~(3U);  // Input(00)
-	PreviousInput = GPIOA->IDR;
+	GPIOA->MODER &= ~(0xCFF);  // Input(00)
+	
+	GPIOA->PUPDR &= ~(0xCFC);
+	GPIOA->PUPDR |= (0x8A8);
 }
 
 void Joy_Check(void) {
-	if ((PreviousInput != GPIOA->IDR) && ((PreviousInput & 1) == 0)) {
-		pause = !pause;
-		Red_LED_Toggle();
+	Input = GPIOA->IDR & (0x2F);
+	if (!paused) {
+		if (Input & 4U) {
+			XCounter < 0 ? XCounter += 2 : XCounter++;
+		} else if (Input & 2U) {
+			XCounter > 0 ? XCounter -= 2 : XCounter--;
+		} else if (XCounter < 0) {
+			XCounter++;
+		} else if (XCounter > 0) {
+			XCounter--;
+		}
+	
+		if (Input & 32U) {
+			YCounter < 0 ? YCounter += 2 : YCounter++;
+		} else if (Input & 8U) {
+			YCounter > 0 ? YCounter -= 2 : YCounter--;
+		} else if (YCounter < 0) {
+			YCounter++;
+		} else if (YCounter > 0) {
+			YCounter--;
+		}
 	}
-	PreviousInput = GPIOA->IDR;
+	if (Input & 1U) {
+		if (paused && !still_pressed) {
+			LCD_Clear();
+			pause = false;
+		} else {
+			//LCD_DisplayString((uint8_t *)"Paused");
+			pause = true;
+		}
+	} else {
+		still_pressed = false;
+	}
+}
+
+bool Paused(void) {
+	paused = pause;
+	return pause;
+}
+
+int Get_XShift(void) {
+	return (XCounter>>12 > 5) ? 5 : XCounter>>12;
+}
+
+int Get_YShift(void) {
+	return (YCounter>>13 > 4) ? 4 : YCounter>>13;
+}	
+	
+// SysTick interrupt service routine
+void SysTick_Handler(void) {
+	TimeDelay--;
+	Joy_Check();
 }
 
 void SysTick_Print_Time(char *str, uint32_t time_to_format, int offset) {
@@ -99,6 +147,8 @@ void SysTick_Write_Time(char *str) {
 
 // nTime: specifies the delay time length
 void delay(uint32_t nTime) {
+	delaying = true;
 	TimeDelay = nTime;
 	while(TimeDelay != 0);
+	delaying = false;
 }
