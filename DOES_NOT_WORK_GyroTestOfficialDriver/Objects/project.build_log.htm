@@ -1,0 +1,453 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tufts EECS, Tufts University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  c:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+Z:\ee14\ee14_lab5\GyroTestOfficialDriver\project.uvprojx
+Project File Date:  04/26/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'c:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+Note: source file '.\STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c' - object file renamed from '.\Objects\stm32l4xx_hal.o' to '.\Objects\stm32l4xx_hal_1.o'.
+assembling startup_stm32l476xx.s...
+compiling stm32l476g_discovery.c...
+STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery.h(38): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery.c: 0 warnings, 1 error
+compiling l3gd20.c...
+compiling stm32l476g_discovery_gyroscope.c...
+STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery.h(38): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery_gyroscope.c: 0 warnings, 1 error
+compiling stm32l4xx_hal.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c(36): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c: 0 warnings, 1 error
+compiling stm32l4xx_hal.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c(36): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_adc_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_adc_ex.c(33): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_adc_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_adc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_adc.c(295): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_adc.c: 0 warnings, 1 error
+compiling LED.c...
+compiling UART.c...
+compiling stm32l4xx_hal_can.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_can.c(213): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_can.c: 0 warnings, 1 error
+compiling SysClock.c...
+compiling stm32l4xx_hal_comp.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_comp.c(192): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_comp.c: 0 warnings, 1 error
+compiling main.c...
+newGyro.h(6): warning:  #1295-D: Deprecated declaration NewGyroInit - give arg types
+  void NewGyroInit();
+newGyro.h(7): warning:  #1295-D: Deprecated declaration displayXYZ - give arg types
+  void displayXYZ();
+main.c(24): warning:  #177-D: variable "n"  was declared but never referenced
+  	int n;
+main.c: 3 warnings, 0 errors
+compiling SysTick.c...
+compiling newGyro.c...
+newGyro.h(6): warning:  #1295-D: Deprecated declaration NewGyroInit - give arg types
+  void NewGyroInit();
+newGyro.h(7): warning:  #1295-D: Deprecated declaration displayXYZ - give arg types
+  void displayXYZ();
+newGyro.c(272): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float scaler = high * 0.001;
+newGyro.c(269): warning:  #177-D: variable "low"  was declared but never referenced
+  	float low		= 8.75;
+newGyro.c(270): warning:  #177-D: variable "mid"  was declared but never referenced
+  	float mid		= 17.50;
+newGyro.c(272): warning:  #177-D: variable "scaler"  was declared but never referenced
+  	float scaler = high * 0.001;
+newGyro.c: 6 warnings, 0 errors
+compiling LCD.c...
+compiling stm32l4xx_hal_crc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc.c(46): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_cortex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c(104): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_crc_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c(33): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_cryp.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cryp.c(123): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cryp.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dac.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dac.c(319): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dac.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_cryp_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cryp_ex.c(22): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cryp_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dac_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dac_ex.c(50): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dac_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dcmi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dcmi.c(162): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dcmi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dfsdm.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dfsdm.c(268): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dfsdm.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dfsdm_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dfsdm_ex.c(24): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dfsdm_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dma.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c(91): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dma_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c(50): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dma2d.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma2d.c(164): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma2d.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_flash_ramfunc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c(48): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_dsi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dsi.c(157): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dsi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_exti.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c(86): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_firewall.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_firewall.c(46): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_firewall.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_flash.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c(88): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_flash_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c(61): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_gfxmmu.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gfxmmu.c(123): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gfxmmu.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_gpio.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c(106): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_hash.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_hash.c(209): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_hash.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_hash_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_hash_ex.c(86): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_hash_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_hcd.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_hcd.c(54): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_hcd.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_i2c.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c(323): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_i2c_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c(51): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_irda.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_irda.c(189): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_irda.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_iwdg.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_iwdg.c(103): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_iwdg.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_lcd.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_lcd.c(82): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_lcd.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_lptim.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_lptim.c(160): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_lptim.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_ltdc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_ltdc.c(163): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_ltdc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_ltdc_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_ltdc_ex.c(20): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_ltdc_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_mmc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_mmc.c(261): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_mmc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_mmc_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_mmc_ex.c(36): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_mmc_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_msp_template.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_msp_template.c(22): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_msp_template.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_nand.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_nand.c(110): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_nand.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_nor.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_nor.c(107): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_nor.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_opamp.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_opamp.c(206): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_opamp.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_opamp_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_opamp_ex.c(26): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_opamp_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_ospi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_ospi.c(237): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_ospi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_pcd.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd.c(57): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_pcd_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd_ex.c(24): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pcd_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_pka.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pka.c(246): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pka.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_pssi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pssi.c(149): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pssi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_pwr.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c(25): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_pwr_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c(25): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_qspi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_qspi.c(211): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_qspi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_rcc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c(51): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_rcc_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(25): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_rng.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rng.c(96): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rng.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_rng_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rng_ex.c(25): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rng_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_rtc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rtc.c(182): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rtc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_rtc_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rtc_ex.c(112): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rtc_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_sai.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sai.c(214): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sai.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_sai_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sai_ex.c(24): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sai_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_sd.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sd.c(272): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sd.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_sd_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sd_ex.c(36): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sd_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_smartcard.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smartcard.c(184): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smartcard.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_smartcard_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smartcard_ex.c(44): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smartcard_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_smbus.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smbus.c(173): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smbus.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_smbus_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smbus_ex.c(44): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_smbus_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_spi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c(200): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_spi_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c(24): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_sram.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sram.c(116): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_sram.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_swpmi.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_swpmi.c(169): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_swpmi.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_tim.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c(187): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_tim_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c(83): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_timebase_tim_template.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_timebase_tim_template.c(42): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_timebase_tim_template.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_tsc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tsc.c(199): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tsc.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_uart.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c(166): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_uart_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c(44): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_usart.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_usart.c(140): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_usart.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_usart_ex.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_usart_ex.c(43): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_usart_ex.c: 0 warnings, 1 error
+compiling stm32l4xx_hal_wwdg.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_wwdg.c(129): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_wwdg.c: 0 warnings, 1 error
+compiling stm32l4xx_ll_adc.c...
+compiling stm32l4xx_ll_comp.c...
+compiling stm32l4xx_ll_crc.c...
+compiling stm32l4xx_ll_crs.c...
+compiling stm32l4xx_ll_dac.c...
+compiling stm32l4xx_ll_dma.c...
+compiling stm32l4xx_ll_dma2d.c...
+compiling stm32l4xx_ll_exti.c...
+compiling stm32l4xx_ll_fmc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_fmc.c(56): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_fmc.c: 0 warnings, 1 error
+compiling stm32l4xx_ll_gpio.c...
+compiling stm32l4xx_ll_i2c.c...
+compiling stm32l4xx_ll_lptim.c...
+compiling stm32l4xx_ll_lpuart.c...
+compiling stm32l4xx_ll_opamp.c...
+compiling stm32l4xx_ll_pwr.c...
+compiling stm32l4xx_ll_pka.c...
+compiling stm32l4xx_ll_rcc.c...
+compiling stm32l4xx_ll_rng.c...
+compiling stm32l4xx_ll_sdmmc.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_sdmmc.c(167): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_sdmmc.c: 0 warnings, 1 error
+compiling stm32l4xx_ll_rtc.c...
+compiling stm32l4xx_ll_spi.c...
+compiling stm32l4xx_ll_swpmi.c...
+compiling stm32l4xx_ll_tim.c...
+compiling stm32l4xx_ll_utils.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_utils.c(19): error:  #5: cannot open source input file "stm32l4xx_ll_utils.h": No such file or directory
+  #include "stm32l4xx_ll_utils.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_utils.c: 0 warnings, 1 error
+compiling stm32l4xx_ll_usb.c...
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_usb.c(42): error:  #5: cannot open source input file "stm32l4xx_hal.h": No such file or directory
+  #include "stm32l4xx_hal.h"
+STM32CubeL4OfficialDrivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_ll_usb.c: 0 warnings, 1 error
+compiling stm32l4xx_ll_usart.c...
+".\Objects\project.axf" - 86 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.1.pack
+                Keil.STM32L4xx_DFP.2.6.1
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

@@ -1,0 +1,94 @@
+Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\main.c)(0x644A043B)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+I (SysTick.h)(0x64459B13)
+I (c:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025CC3C)
+I (LED.h)(0x64459B12)
+I (LCD.h)(0x64459B12)
+I (UART.h)(0x64459B13)
+I (SysClock.h)(0x64459B13)
+I (gyro_l3gd20.h)(0x644A03F5)
+I (c:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x6025CC34)
+F (.\startup_stm32l476xx.s)(0x64459B13)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include--pd "__UVISION_VERSION SETA 535" --pd "_RTE_ SETA 1" --pd "STM32L476xx SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_stm32l476xx.lst --xref -o .\objects\startup_stm32l476xx.o --depend .\objects\startup_stm32l476xx.d)
+F (.\stm32l476xx.h)(0x64459B13)()
+F (.\LED.c)(0x64459B12)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (LED.h)(0x64459B12)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+F (.\SysTick.h)(0x64459B13)()
+F (.\SysTick.c)(0x64459B13)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+I (LED.h)(0x64459B12)
+I (c:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x6025CC34)
+I (c:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025CC3C)
+F (.\LCD.c)(0x64459B12)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+I (lcd.h)(0x64459B12)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+F (.\LCD.h)(0x64459B12)()
+F (.\UART.c)(0x64459B13)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (UART.h)(0x64459B13)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+F (.\UART.h)(0x64459B13)()
+F (.\SysClock.c)(0x64459B13)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\sysclock.o --omf_browse .\objects\sysclock.crf --depend .\objects\sysclock.d)
+I (SysClock.h)(0x64459B13)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+F (.\SysClock.h)(0x64459B13)()
+F (.\gyro_l3gd20.h)(0x644A03F5)()
+F (.\gyro_l3gd20.c)(0x644A03CC)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-Ic:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include-Ic:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32L476xx -D_RTE_-o .\objects\gyro_l3gd20.o --omf_browse .\objects\gyro_l3gd20.crf --depend .\objects\gyro_l3gd20.d)
+I (gyro_l3gd20.h)(0x644A03F5)
+I (stm32l476xx.h)(0x64459B13)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x627001AE)
+I (c:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x627001AE)
+I (c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h)(0x60F01C18)
+I (SysTick.h)(0x64459B13)
+I (c:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025CC3C)
+I (UART.h)(0x64459B13)
+I (c:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025CC3E)
+I (c:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x6025CC34)
