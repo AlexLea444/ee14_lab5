@@ -1,3 +1,0 @@
-.\objects\stm32l476g_discovery_gyroscope.o: STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery_gyroscope.c
-.\objects\stm32l476g_discovery_gyroscope.o: STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery_gyroscope.h
-.\objects\stm32l476g_discovery_gyroscope.o: STM32CubeL4OfficialDrivers\STM32L476G-Discovery\stm32l476g_discovery.h
