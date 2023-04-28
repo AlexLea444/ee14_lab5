@@ -1,0 +1,16 @@
+.\objects\gyro_l3gd20.o: gyro_l3gd20.c
+.\objects\gyro_l3gd20.o: gyro_l3gd20.h
+.\objects\gyro_l3gd20.o: stm32l476xx.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.6.1\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h
+.\objects\gyro_l3gd20.o: SysTick.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\gyro_l3gd20.o: UART.h
+.\objects\gyro_l3gd20.o: LED.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\gyro_l3gd20.o: c:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
